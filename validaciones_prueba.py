@@ -1,6 +1,7 @@
 #nro de validacines ¿? indeterminado de momento
 import time as tp
 
+
 import numpy
 modulos_mascotas = numpy.empty((2,5),object)
 modulos_mascotas.fill("🟨")
@@ -30,6 +31,7 @@ def menu_movimiento():
    
 
     ''')
+    
 def navegar_menu():
     while True:
         try:
@@ -207,6 +209,7 @@ def opc_3():
             bloque_X_mascota.pop(posicion)
             bloque_y_mascota.pop(posicion)
             print("terminando proceso")
+            mostrar_modulos_disponibles()
             tp.sleep(3)
         elif pagar==2:
             print("Regresando")
